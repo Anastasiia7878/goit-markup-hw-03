@@ -1,6 +1,6 @@
-:root{
-    --primary-font: 'Roboto',sans-serif;
-    --secondary-font: 'Raleway',sans-serif;
+:root {
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
     --accent-color: #2196F3;
     --primary-text-color: #212121;
     --secondary-text-colour: #757575;
@@ -35,19 +35,20 @@ button {
     text-decoration: none;
     font-style: normal;
 }
+
 .list {
     list-style: none;
 }
 
-body{
-    font-family: var(--primary-font)
-    color: var(--primary-text-color);
+body {
+    font-family: var(--primary-font) color: var(--primary-text-color);
 }
 
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .container {
     width: 1200px;
     margin-left: auto;
@@ -57,37 +58,44 @@ body{
 }
 
 /* ====Header==== */
-.page-header{
+.page-header {
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px Solid #ECECEC;
 }
+
 .page-header-container {
     display: flex;
     align-items: center;
 }
+
 .nav-list {
     display: flex;
     align-items: center;
 }
+
 .contacn-list {
     display: flex;
     align-items: center;
 }
+
 .logo {
     margin-right: 93px;
 }
+
 .nav-list-item:not(:last-child) {
     margin-right: 50px;
 }
+
 .contact-mail {
     margin-right: 50px;
 }
+
 .contacn-list {
     margin-left: auto;
 }
 
-.logo{
+.logo {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -96,37 +104,41 @@ body{
 
     color: var(--accent-color);
 }
-.logo-second{
+
+.logo-second {
     color: #000000;
 }
 
-.link-nav{
+.link-nav {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
 }
+
 .link-nav:hover,
-.link-nav:focus{
+.link-nav:focus {
     color: var(--accent-color);
 }
-.contact-header-link{
+
+.contact-header-link {
     color: var(--secondary-text-colour);
 }
 
 /* ====HERO==== */
-.hero-title{
+.hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    
+
     color: var(--primary-text-color-theme-dark);
 }
-.hero-btn{
+
+.hero-btn {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 32px;
@@ -141,11 +153,14 @@ body{
     letter-spacing: 0.06em;
     margin-top: 30px;
     color: var(--primary-text-color-theme-dark);
-    background-color:var(--accent-color); 
+    background-color: var(--accent-color);
     margin-left: auto;
     margin-right: auto;
+    border: none;
+    border-radius: 4px;
 }
-.hero{
+
+.hero {
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -156,31 +171,45 @@ body{
     margin-bottom: 50px;
 }
 
-.teams-pluses-list{
+.teams-pluses-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
+
 .our-works {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
+
 .our-team {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
+
 .teams-pluses-item {
     flex-basis: calc((100% - 90px) / 4);
 }
+
 .work-title-list {
     flex-basis: calc((100% - 60px) / 3);
 }
-.team-list {
+
+.team-list-title {
+    display: flex;
     flex-basis: calc((100% - 90px) / 4);
 }
-.pluses-title{
+
+.team-list {
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 0.12),
+        0px 1px 1px rgb(0 0 0 / 0.14),
+        0px 2px 1px rgb(0 0 0 / 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.pluses-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -188,15 +217,17 @@ body{
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-.plusses-text{
+
+.plusses-text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 
     color: var(--secondary-text-colour);
 }
+
 .work-title,
-.team-title{
+.team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -204,7 +235,8 @@ body{
     letter-spacing: 0.03em;
     margin-bottom: 50px;
 }
-.name{
+
+.name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -213,50 +245,59 @@ body{
     padding-top: 30px;
     margin-bottom: 10px;
 }
-.job-title{
+
+.job-title {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    
+
     color: var(--secondary-text-colour);
 }
-.team{
+
+.team {
     background-color: #F5F4FA;
 }
 
 /* ====Footer==== */
-.logo-footer{
+.logo-footer {
     margin-bottom: 20px;
 }
+
 .contact-footer:not(:last-child) {
     margin-bottom: 9px;
 }
+
 .address-link,
-.contact-link{
+.contact-link {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    
+
     color: rgba(255, 255, 255, 0.6);
 }
+
 .contact-link:hover,
-.contact-link:focus{
+.contact-link:focus {
     color: var(--primary-text-color-theme-dark);
 }
+
 .address-link:hover,
-.address-link:focus{
+.address-link:focus {
     color: var(--primary-text-color-theme-dark);
 }
-.footer{
+
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
 }
-.second-logo-footer{
+
+.second-logo-footer {
     color: var(--primary-text-color-theme-dark);
 }
-.address-link{
+
+.address-link {
     color: var(--primary-text-color-theme-dark);
 }
 
@@ -277,14 +318,17 @@ body{
     flex-wrap: wrap;
     gap: 30px;
 }
-.work-example-title{
+
+.work-example-title {
     flex-basis: calc((100% - 60px) / 3);
 }
-.work-example-text{
+
+.work-example-text {
     border: 1px solid #EEEEEE;
     border-top: none;
 }
-.filter-btn{
+
+.filter-btn {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -293,24 +337,28 @@ body{
     background-color: #F5F4FA;
     border: none;
 }
+
 .filter-btn:hover,
-.filter-btn:focus{
+.filter-btn:focus {
     color: var(--primary-text-color-theme-dark);
     background-color: var(--accent-color);
 }
-.example-text{
+
+.example-text {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    
+
     color: var(--secondary-text-colour);
 }
-.example-title{
+
+.example-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
-.work-example-title{
+
+.work-example-title {
     background-color: var(--primary-text-color-theme-dark);
 }
