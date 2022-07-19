@@ -336,6 +336,7 @@ body {
     letter-spacing: 0.03em;
     background-color: #F5F4FA;
     border: none;
+    border-radius: 4px;
 }
 
 .filter-btn:hover,
