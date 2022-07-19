@@ -25,6 +25,8 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 button {
@@ -41,7 +43,8 @@ button {
 }
 
 body {
-    font-family: var(--primary-font) color: var(--primary-text-color);
+    font-family: var(--primary-font);
+    color: var(--primary-text-color);
 }
 
 .section {
@@ -171,10 +174,28 @@ body {
     margin-bottom: 50px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .teams-pluses-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.our-works-section {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .our-works {
@@ -207,6 +228,7 @@ body {
         0px 1px 1px rgb(0 0 0 / 0.14),
         0px 2px 1px rgb(0 0 0 / 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--primary-text-color-theme-dark);
 }
 
 .pluses-title {
@@ -242,8 +264,12 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 30px;
     margin-bottom: 10px;
+}
+
+.person {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .job-title {
@@ -262,6 +288,7 @@ body {
 /* ====Footer==== */
 .logo-footer {
     margin-bottom: 20px;
+    display: block;
 }
 
 .contact-footer:not(:last-child) {
@@ -310,7 +337,6 @@ body {
     gap: 8px;
     margin-bottom: 50px;
     justify-content: center;
-    flex-basis: calc((100% - 32px) / 5);
 }
 
 .work-example-list {
@@ -326,6 +352,7 @@ body {
 .work-example-text {
     border: 1px solid #EEEEEE;
     border-top: none;
+    padding: 24px 20px;
 }
 
 .filter-btn {
@@ -349,7 +376,7 @@ body {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-
+    margin-bottom: 4px;
     color: var(--secondary-text-colour);
 }
 
